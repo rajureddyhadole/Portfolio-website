@@ -86,7 +86,7 @@ div.personal-info {
     width: 70%;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
 }
 div.personal-info h1 {
     color: #3C493F;
@@ -96,18 +96,19 @@ div.personal-info h1 {
 div.personal-info h3 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #7E8D85;
+    color: #809289;
 }
 div.personal-info p {
     font-size: 1rem;
     margin-bottom: 2rem;
-    color: #9ba7a0;
+    line-height: 1.5rem;
+    color: #7E8D85;
 }
 div.personal-info a {
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--secondary-color);
-    background-color: #A2E3C4;
+    background-color: #9de6c2;
     width: 200px;
     text-align: center;
     padding: 0.5rem 0;
@@ -116,6 +117,17 @@ div.personal-info a {
 }
 div.personal-info a:hover {
     background-color: #90f0c3;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.social-icons{
+    fill: var(--secondary-color);
 }
 
 @media (max-width: 600px) {
@@ -154,5 +166,30 @@ div.personal-info a:hover {
         left: 0;
         z-index: 9;
     }
+    div.personal-info {
+        width: 75%;
+    }
+    div.personal-info h1 {
+        font-size: 2rem;
+    }
+    div.personal-info h3 {
+        font-size: 1.2rem;
+    }
+    div.personal-info p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    div.personal-info a {
+        font-size: 1.2rem;
+    }
 
+}
+
+@media (min-width: 600px) {
+    div.personal-info {
+        text-align: center;
+    }
+    div.personal-info a {
+        align-self: center;
+    }
 }
