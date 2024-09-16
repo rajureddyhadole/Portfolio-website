@@ -112,6 +112,7 @@ form #email {
     padding-left: 1rem;
 }
 form #msg {
+    padding-top: 0.25rem;
     height: 10rem;
     width: 34rem;
     font-size: 1rem;

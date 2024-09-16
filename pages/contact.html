@@ -31,11 +31,12 @@
     </nav>
 
     <main>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
             <h1>Contact me</h1>
-            <input id="name" type="text" name="name" placeholder="Name...">
-            <input id="email" type="email" name="email" placeholder="Email...">
-            <textarea id="msg" name="message" placeholder="Feedback..."></textarea>
+            <input type="hidden" name="access_key" value="7f4eef25-a7af-40b6-af81-e05bbcb9c7e1">
+            <input id="name" type="text" name="name" placeholder="Name..." required>
+            <input id="email" type="email" name="email" placeholder="Email..." required>
+            <textarea id="msg" name="message" placeholder="Feedback..." required></textarea>
             <button id="button" type="submit">Submit</button>
         </form>
     </main>
